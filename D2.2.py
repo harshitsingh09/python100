@@ -12,4 +12,3 @@ bmi = W/(H**2)
 
 # display the BMI value as output
 print(bmi)
-##
