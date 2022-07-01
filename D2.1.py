@@ -19,4 +19,3 @@ sum = int(num[0]) + int(num[1])
 
 # displaying sum output
 print("The sum of digits in 2 digit integer =", sum)
-##
