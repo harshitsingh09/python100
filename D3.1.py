@@ -15,4 +15,3 @@ else:
     print(f'Number {num} is ODD!')
 
 # ..print statement used to display output
-#ll
