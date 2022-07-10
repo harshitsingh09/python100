@@ -2,9 +2,6 @@
 # Allow the user to enter a percentage of tip that each customers can give.
 
 # Greetings
-from pprint import pp
-
-
 print('Welcome to the tip calculator!\n')
 
 # Taking input of total bill value
