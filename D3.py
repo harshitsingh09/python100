@@ -6,4 +6,6 @@ print('Welcome to TREASURE ISLAND!\n Your mission is to find the Hidden Treasure
 
 # Sequence of events
 p1 = input('You have spawned at a cross-road! Choose one road to travel on.. \n[type "left" or "right"]')
-if p1 == 'left':
+if p1 == 'right':
+    print('Game over!')
+elif
