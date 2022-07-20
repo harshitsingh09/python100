@@ -1,4 +1,5 @@
-# Using the Random module
+# Heads or Tails
+# Program for a random coin toss
 
 # Importing the random module
 import random
