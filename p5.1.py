@@ -23,5 +23,5 @@ for student in student_heights:
 # Calculating the average of Heights
 average = round(total_height/number_of_students)
 
-#Displaying the output
+# Displaying the output
 print(average)
