@@ -1,29 +1,32 @@
 # Hangman (Challenge 2)
-# Test each letter in a word against the user entered letter in a list
+# Converting the positions to a letter if correct input is given by user
 
-# Generating list of words
-wordList = ["ardvark", "baboon", "camel"]
-
-# Selecting on word from given list
+# Selecting a random word out of the three using the random module
 import random
-word = random.choice(wordList)
-print(f'\nPsst! The chosen word is {word}\n')
+word_list = ["aardvark", "baboon", "camel"]
+chosen_word = random.choice(word_list)
 
-# Converting the word into a list
-wordList = list(word)
-#print(wordList)
+# Displaying the chosen word
+print(f'Pssst, the solution is {chosen_word}.')
 
-# Entering dashes into the list (same no. of letters as in the word)
-blank = []
-for letter in word:
-    blank.append('_')
-print(blank)
+# Create an empty List called display
+display = []
 
-# Taking a letter input from user
-guess = str(input('\nEnter a letter!\n-> ')).lower()
+# For each letter in the chosen_word, add a "_" to 'display'
+word_length = len(chosen_word)
+for _ in range(word_length):
+    display += "_"
 
-# Testing each letter of word against the user entered letter
-for letter in range(len(word)):
-    if word[letter] == guess:
-        blank[letter] == guess
-print(blank)
+# Take input from the user
+guess = input("Guess a letter: ").lower()
+
+# Loop through each position in the chosen_word
+# If the letter at that position matches 'guess' then reveal that letter in the display at that position
+for position in range(word_length):
+    letter = chosen_word[position]
+    #print(f"Current position: {position}\n Current letter: {letter}\n Guessed letter: {guess}")
+    if letter == guess:
+        display[position] = letter
+
+# Print 'display' and you should see the guessed letter in the correct position
+print(display)
